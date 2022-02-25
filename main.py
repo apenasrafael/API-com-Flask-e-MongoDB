@@ -46,7 +46,6 @@ def top10(ano):
     imdb = pd.read_csv('imdb.csv')
     top_dez = imdb.loc[imdb['Released_Year'] == str(ano)][:10]
     filmes = top_dez[['Series_Title', 'IMDB_Rating', 'Runtime', 'Genre', 'Director']]
-    contador = 1
     resposta = dict()
     for i in range(len(filmes)):
         aux = dict()
@@ -55,8 +54,7 @@ def top10(ano):
         aux['duracao'] = filmes.iloc[i]['Runtime']
         aux['genero'] = filmes.iloc[i]['Genre']
         aux['diretor'] = filmes.iloc[i]['Director']
-        resposta[contador] = aux
-        contador += 1
+        resposta[i+1] = aux
 
     return jsonify(resposta)
 
