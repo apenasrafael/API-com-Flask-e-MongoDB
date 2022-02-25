@@ -6,7 +6,8 @@ Essa API foi escrita para fins de estudo e utiliza as bibliotecas Flask, pandas 
 O arquivo **main.py** contém a implementação principal.  
 O arquivo **auxiliar.py** contém funções auxiliares, entre elas a que faz a comunicação com o MongoDB.  
 O arquivo **imdb.csv** é a fonte de dados que é lida.  
-Por fim, no arquivo **requirements.txt** estão listadas as bibliotecas instaladas (e suas respectivas dependências).
+Por fim, no arquivo **requirements.txt** estão listadas as bibliotecas instaladas (e suas respectivas dependências).  
+Para instalação da biblioteca PyMongo, o [site oficial](https://docs.mongodb.com/drivers/pymongo/) do MongoDB recomenda o seguinte comando: **pip install 'pymongo[srv]'**
 
 
 # Sobre a API
