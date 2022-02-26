@@ -1,7 +1,7 @@
 # API-com-Flask-e-MongoDB
 Olá!
 
-Essa API foi escrita para fins de estudo e utiliza as bibliotecas Flask, pandas e PyMongo.
+Essa API foi escrita para fins de estudo e utiliza as bibliotecas **Flask**, **pandas** e **PyMongo**.
 
 Link: https://api-com-flask-e-mongodb.herokuapp.com/
 
