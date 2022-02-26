@@ -3,6 +3,8 @@ Olá!
 
 Essa API foi escrita para fins de estudo e utiliza as bibliotecas Flask, pandas e PyMongo.
 
+Link: https://api-com-flask-e-mongodb.herokuapp.com/
+
 O arquivo **main.py** contém a implementação principal.  
 O arquivo **auxiliar.py** contém funções auxiliares, entre elas a que faz a comunicação com o MongoDB.  
 O arquivo **imdb.csv** é a fonte de dados que é lida.  
