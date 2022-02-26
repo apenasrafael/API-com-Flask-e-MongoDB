@@ -20,12 +20,12 @@ Para instalação da biblioteca PyMongo, o [site oficial](https://docs.mongodb.c
 
 Para fazer a busca, indique o ano conforme o padrão abaixo (sem as chaves):
 
-* https://demoapi.apenasrafael.repl.co/top10/{ano}
+* https://api-com-flask-e-mongodb.herokuapp.com/top10/{ano}
 
 
 A API também fornece informações sobre algum número. Siga o seguinte formato (sem as chaves):
 
-* https://demoapi.apenasrafael.repl.co/valor/{numero}
+* https://api-com-flask-e-mongodb.herokuapp.com/valor/{numero}
 
 # Integração com MongoDB
 Quando a API é requisitada, é inserido um registro no MongoDB com informações relativas à consulta.
