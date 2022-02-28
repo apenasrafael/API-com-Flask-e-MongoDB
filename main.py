@@ -63,6 +63,9 @@ def top10(ano):
         resposta[contador] = aux
         contador += 1
 
+    if len(resposta) == 0:
+        resposta['ERRO'] = 'O ano informado não possui registros.'
+
     return jsonify(resposta)
 
 
