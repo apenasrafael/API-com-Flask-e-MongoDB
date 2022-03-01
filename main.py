@@ -1,6 +1,6 @@
 import pandas as pd
 import roman
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from datetime import datetime
 from num2words import num2words
 from auxiliar import inserir_no_mongodb
@@ -13,17 +13,7 @@ data_atual = datetime.now().strftime("%d/%m/%Y - %H:%M:%S")
 
 @app.route('/')
 def homepage():
-    mensagem = 'Olá, <b>visitante!</b> </br></br>'
-    mensagem += 'Essa API retorna informações sobre filmes do <b>TOP 10</b> por ano (até 2020), '
-    mensagem += 'de acordo com o <b>IMDB</b>. O site utiliza a nota como critério.</br></br>'
-    mensagem += 'Para fazer a busca, indique o ano conforme o padrão abaixo (sem as chaves):</br></br>'
-    mensagem += '<li>https://api-com-flask-e-mongodb.herokuapp.com/top10/<b>{ano}</b></li></br></br>'
-    mensagem += 'A API também fornece informações sobre algum número. Siga o seguinte formato '
-    mensagem += '(sem as chaves):</br></br>'
-    mensagem += '<li>https://api-com-flask-e-mongodb.herokuapp.com/valor/<b>{numero}</li></b></br></br>'
-    mensagem += 'Status da API: <b>ON</b> (' + data_atual + ')'
-
-    return mensagem
+    return render_template('home.html')
 
 
 @app.route('/valor/<int:numero>')
