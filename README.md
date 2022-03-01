@@ -13,7 +13,7 @@ Por fim, no arquivo **requirements.txt** estão listadas as bibliotecas instalad
 
 # Sobre a API
 
-É possível obter informações sobre filmes do TOP 10 por ano (até 2020), de acordo com o IMDB. O site utiliza a nota como critério.
+É possível obter informações (título, diretor, nota, duração e gênero) sobre filmes do TOP 10 por ano (até 2020), de acordo com o IMDB. O site utiliza a nota como critério.
 
 
 
@@ -22,7 +22,7 @@ Para fazer a busca, indique o ano conforme o padrão abaixo (sem as chaves):
 * https://api-com-flask-e-mongodb.herokuapp.com/top10/{ano}
 
 
-A API também fornece informações sobre algum número. Siga o seguinte formato (sem as chaves):
+A API também fornece informações (número escrito por extenso, número romano, número ordinal, etc) sobre algum valor. Siga o seguinte formato (sem as chaves):
 
 * https://api-com-flask-e-mongodb.herokuapp.com/valor/{numero}
 
