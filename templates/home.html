@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/html">
+<meta charset="utf-8">
+	<head>
+		<h2 align="left">API com Flask e MongoDB</h2>
+		<title>API com Flask e MongoDB</title>
+	</head>
+	<style>
+		body{
+			  font-family: "Roboto", sans-serif;
+			  font-size: 18px;
+			  color: "black";
+		  }
+	</style>
+
+	<body style="background-color:cyan">
+		<p align="justify">
+				Olá! </br>
+				Essa API retorna informações (título, diretor, nota, duração e gênero) sobre filmes do <b>TOP 10</b> por ano (até 2020), de acordo com o <b>IMDB</b>. O site utiliza a nota como critério.</br></br>
+    			Para fazer a busca, indique o ano conforme o padrão abaixo (sem as chaves):</br>
+		</p>
+		<p align="left">
+			<li>https://api-com-flask-e-mongodb.herokuapp.com/top10/<b>{ano}</b></li>
+		</p>
+		<p align="justify">
+    			A API também fornece informações (número escrito por extenso, número romano, número ordinal, etc) sobre algum valor. Siga o seguinte formato (sem as chaves):</br>
+		</p>
+		<p align="left">
+			<li>https://api-com-flask-e-mongodb.herokuapp.com/valor/<b>{numero}</b></li>
+		</p>
+
+		<h2 align="left">Integração com o MongoDB</h2>
+			<p align="justify">
+				Quando a API é requisitada, é inserido um registro no MongoDB com informações relativas à consulta. É necessário configurar a conexão com o respectivo caminho do database, assim como o nome do database e a collection escolhida para realizar a inserção.
+			</p>
+	</body>
+
+	<footer>
+		<h2 align="left">Contato</h2>
+		<p> <b>Feito por:</b> Rafael Pinto</p>
+		<p> <b>E-mail:</b> <a href="mailto:rafaelsp.dev@gmail.com"> rafaelsp.dev@gmail.com </a> </p>
+		<p> <b>GitHub: </b> <a href="https://github.com/apenasrafael/"> https://github.com/apenasrafael/ </a> </p>
+	</footer>
+</html>
